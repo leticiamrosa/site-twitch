@@ -1,49 +1,101 @@
 <!doctype html>
 <html lang="pt-br">
-  <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <meta name="description" content="">
-    <meta name="author" content="Leticia">
+  <meta name="description" content="">
+  <meta name="author" content="Leticia">
 
-    <!-- Css -->
-    <link rel="stylesheet" href="css\bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
-    <link rel="stylesheet" href="css\style.css"/>
+  <!-- Css -->
+  <link rel="stylesheet" href="css\bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\style.css"/>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
-
-    <title>Lemonoob</title>
-  </head>
-  <body>
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
 
 
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
+  <title>Lemonoob</title>
+</head>
+<body>
 
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "lemonoob"
-      });
-    </script>
+    <a class="navbar-brand" href="#">
+      <img src="img\brand.png" width="50" height="auto" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Sobre<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Jogos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#"><svg-icon><src href="sprite.svg#si-glyph-alarm-clock" /></svg-icon>Finalizados</a>
+            <a class="dropdown-item" href="#">Em andamento</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Lista de desejo</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Rank
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Top Cafezinhos</a>
+            <a class="dropdown-item" href="#">Top Pagamentos</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sorteios</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/cover.png" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="..." alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="..." alt="Third slide">
+        </div>
+      </div>
+    </div>
+  </div>
 
 
+  <div class="container">
+    <div class="col-sm-12">
 
+      <!-- Add a placeholder for the Twitch embed -->
+      <div id="twitch-embed"></div>
 
+      <!-- Load the Twitch embed script -->
+      <script src="https://embed.twitch.tv/embed/v1.js"></script>
+    </div>
+  </div>
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="js\bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
-  </body>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js\bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="js\init.js"></script>
+</body>
 </html>
