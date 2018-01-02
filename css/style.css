@@ -1,6 +1,28 @@
 /* ===========================================================
-                      WWW.TWITCH.TV/LEMONOOB
-                        STYLE OF LEMONOOB
- ============================================================ */
+WWW.TWITCH.TV/LEMONOOB
+STYLE OF LEMONOOB
+============================================================ */
 
- 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+p {
+  font-family: 'Hind', sans-serif !important;
+}
+
+
+#bg-cover {
+  background-attachment: fixed;
+  background-image: url(../img/bg.jpg);
+  height: 900px;
+}
+
+.central {
+margin-left: 15%;
+padding-top: 150px;
+}
+
+@media screen and (max-width: 480px) {
+
+}

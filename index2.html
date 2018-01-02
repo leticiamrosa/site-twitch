@@ -1,0 +1,48 @@
+<!doctype html>
+<html  ng-app="myApp">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="pt-br" />
+
+  <title>Leticia Monteiro</title>
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
+  <!-- Css -->
+  <link type="text/css" rel="stylesheet" href="vendor/materialize/css/materialize.min.css" />
+  <link type="text/css" rel="stylesheet" href="content/css/style.css"/>
+
+  <!-- Materialize -->
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="js\bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="js\init.js"></script>
+
+</head>
+<body>
+
+  <!-- Como adicionar templates no AngularJs -->
+  <!-- <header ng-include="'header.html'"></header> -->
+
+  <curriculo ng-include="'views/curriculo.html'"></curriculo>
+  <sobre ng-include="'views/sobre.html'"></sobre>
+
+
+
+
+
+  <!-- JavaScript -->
+  <script src="app/lib/angular.min.js"></script>
+  <script src="app/lib/angular-route.min.js"></script>
+  <script src="app/lib/angular-progressbar.min.js"></script>
+  <script src="node_modules/ng-parallax/src/ngParallax.min.js"> </script>
+  <script src="app/app.js"></script>
+
+
+
+</body>
+</html>
