@@ -21,10 +21,12 @@ p {
   background-size: cover;
 }
 
+
 .central {
 margin-left: 15%;
 padding-top: 150px;
 }
+
 
 
 /* FOOTER */
@@ -44,6 +46,21 @@ padding-top: 150px;
   padding-top: 200px;
 }
 
+/* ERRO 404 */
+
+.titulo-erro {
+  color: #fff;
+  padding-top: 400px;
+  opacity: 1.0 !important;
+}
+
+.bg-titulo-erro {
+  background-color: black;
+  padding: 30px 30px;
+  border-radius: 5px;
+  opacity: 0.8;
+}
+
 /* OUTROS TAMANHOS DE TELA */
 @media screen and (max-width: 480px) {
 
@@ -55,5 +72,27 @@ padding-top: 150px;
  }
  .central {
    margin-left: -20px;
+ }
+}
+
+@media screen and (max-width: 480px) {
+ .twitch-embed {
+    width: 420px !important;
+    height: auto !important;
+ }
+ .central {
+   margin-left: -20px;
+ }
+ .titulo-erro {
+   color: #fff;
+   padding-top: 250px;
+   opacity: 1.0 !important;
+ }
+
+ .bg-titulo-erro {
+   background-color: black;
+   padding: 30px 30px;
+   border-radius: 5px;
+   opacity: 0.8;
  }
 }
