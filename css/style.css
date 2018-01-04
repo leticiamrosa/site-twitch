@@ -23,7 +23,7 @@ p {
 
 
 .central {
-margin-left: 15%;
+margin-left:  15%;
 padding-top: 150px;
 }
 
@@ -62,16 +62,13 @@ padding-top: 150px;
 }
 
 /* OUTROS TAMANHOS DE TELA */
-@media screen and (max-width: 480px) {
-
-}
 
 @media screen and (max-width: 1280px) {
  .twitch-embed {
     width: 420px !important;
  }
  .central {
-   margin-left: -20px;
+   margin-left: 10px;
  }
 }
 
